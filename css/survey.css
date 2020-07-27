@@ -171,13 +171,4 @@ label {
   }
 
 
-  #motoko {
-    position: absolute;
-    display: flex;
-    max-width: 100%;
-    width: 100px;
-    top: 1693px;
-    margin-left: 900px;
-    margin-bottom: 500px;
-    
-  }
+
