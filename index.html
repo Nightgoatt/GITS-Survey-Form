@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <div class="container">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/survey.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <img id="gitslogo" src="images/gitslogoweb.png" alt="GITS logo">
+    <title>GITS - Survey Form</title>
+
+    <h1 id="title" class="text-center">GITS - Survey Form</h1>
+    <p id="description" class="description-text-center"> Thank you for taking this survey!</p>
+
+</head>
+
+<body>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" placeholder="Enter your name" name="name" id="name" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">E-mail</label>
+      <input type="text" placeholder="Enter your e-mail" name="email" id="email" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="age">Age<span class="clue">(optional)</span></label>
+      <input type="number" placeholder="Age" name="age" id="number" min="10" max="99" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <p>Which version of GITS do you prefer?</p>
+      <select name="version" id="dropdown" class="form-control" required>
+        <option disabled selected value>Select your version</option>
+        <option value="gits-manga">Ghost in The Shell: (MANGA)</option>
+        <option value="gits-1995">Ghost in The Shell: (1995 film)</option>
+        <option value="innocence">Ghost in The Shell 2: Innocence</option>
+        <option value="sac">Ghost in the Shell: SAC</option>
+        <option value="arise">Ghost in The Shell: Arise</option>
+        <option value="sac-2045">Ghost in The Shell: SAC_2045</option>
+        <option value="games">Ghost in The Shell: PS1/PS2/PSP/PC (Games)</option>
+        <option value="gits17">Ghost in The Shell: (2017 film)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend your favourite version to a friend?</p>
+      <label>
+        <input type="radio" value="definitely" name="user-recommend" class="input-radio" checked />Definitely
+      </label>
+
+      <label>
+        <input type="radio" value="maybe" name="user-recommend" class="input-radio" />Maybe
+      </label>
+
+      <label>
+        <input type="radio" value="not-sure" name="user-recommend" class="input-radio" />Not sure
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>Who is your favourite section 9 character from the GITS series?</p>
+      <select name="character" id="favourite" class="form-control" required>
+        <option disabled>Select your character</option>
+        <option value="aramaki">Chief Daisuke Aramaki</option>
+        <option value="motoko">Major Motoko Kusanagi</option>
+        <option value="batou">Batou</option>
+        <option value="togusa">Togusa</option>
+        <option value="ishikawa">Ishikawa</option>
+        <option value="saito">Saito</option>
+        <option value="borma">Borma</option>
+        <option value="paz">Paz</option>
+        <option value="tachikoma">Think Tanks (Tachikomas/Fuchikomas/etc...)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>In what modern form would you like to see a new product from the GITS series?</p>
+      <label>
+        <input type="checkbox" name="prefer" class="input-checkbox" value="series">2D/3D Series
+      </label>
+
+      <label>
+        <input type="checkbox" name="prefer" class="input-checkbox" value="live">Live Action Movie
+      </label>
+
+      <label>
+        <input type="checkbox" name="prefer" class="input-checkbox" value="live-series">Live Action Series
+      </label>
+
+      <label>
+        <input type="checkbox" name="prefer" class="input-checkbox" value="manga">MANGA
+      </label>
+
+      <label>
+        <input type="checkbox" name="prefer" class="input-checkbox" value="game">Videogame
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>If you want to add a comment, please, be my guest! :)</p>
+      <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button"><strong>送る</strong></button>
+    </div>
+
+    <audio src="audio/fromtheroof.mp3" type="audio/mpeg" id="audio" autoplay loop>Your browser do not support
+      the audio
+      element</audio>
+
+
+
+  </form>
+
+
+  <img src="images/motoko.png" alt="motokologo" id="motoko">
+
+  </div>
+</body>
+
+</html>
