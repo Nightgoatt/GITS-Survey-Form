@@ -1,6 +1,7 @@
 :root {
     --color-green: #00e600;
     --color-purple-alpha: rgba(125, 70, 224, 0.3);
+    --color-black: #000000;
   }
   
 #gitslogo {
@@ -109,7 +110,7 @@ label {
      color: var(--color-green);
      margin: 0;
      text-align: center;
-     background: var(--color-green);
+     background: var(--color-black);
      background-image: linear-gradient(
       115deg,
       rgba(0, 0, 0, 0.7),
@@ -160,6 +161,7 @@ label {
     padding: 0.625rem;
     resize: vertical;
   }
+
 
 
   .submit-button {
