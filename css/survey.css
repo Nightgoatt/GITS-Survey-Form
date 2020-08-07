@@ -40,7 +40,6 @@ p {
     margin-bottom: 0.5rem;
   }
 
- /* form */
 
   form {
     background: var(--color-purple-alpha);
@@ -50,9 +49,9 @@ p {
     margin-bottom: 2rem;
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: 300px) {
     form {
-      padding: 2.5rem;
+      padding: 3rem;
     }
   }
 
@@ -69,28 +68,15 @@ p {
   box-sizing: border-box;
   background-color: #000000;
   color: inherit;
-  border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  background-clip: padding-box;
   border: 1px solid #00e600;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-  
   }
-
-
-  .form-control:focus {
-  border-color: #ff00ff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
 
   
 label {
     display: flex;
     align-items: center;
-    font-size: 1.250rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
 
@@ -125,20 +111,20 @@ label {
  
   .container {
     width: 100%;
-    margin: 3.125rem auto 0 auto;
+    margin: 3.2rem auto 0 auto;
   }
 
 
 
-  @media (min-width: 576px) {
+  @media (max-width: 500px) {
   .container {
-    max-width: 540px;
+    max-width: 480px;
   }
 }
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .container {
     max-width: 720px;
   }
@@ -149,16 +135,16 @@ label {
 
   .input-radio, .input-checkbox {
     display: inline-block;
-    margin-right: 0.625rem;
-    min-height: 1.1rem;
-    min-width: 1.1rem;
+    margin-right: 0.6rem;
+    min-height: 1rem;
+    min-width: 1rem;
   }
 
 
   .input-textarea {
-    min-height: 120px;
+    min-height: 100px;
     width: 100%;
-    padding: 0.625rem;
+    padding: 0.5rem;
     resize: vertical;
   }
 
@@ -166,7 +152,7 @@ label {
 
   .submit-button {
     width: 50%;
-    padding: 0.75rem;
+    padding: 0.7rem;
     background: var(--color-green);
     border-radius: 5px;
     cursor: pointer;
